@@ -7,6 +7,7 @@ Sign up for an Azure account if you don't have one.
 Create a Resource Group:
 
 In the Azure portal, create a new resource group to organize your resources.
+
 Step 2: Create Azure Form Recognizer Resource
 Navigate to Azure Portal:
 
@@ -15,6 +16,7 @@ Configure the Resource:
 
 Provide a name, select a subscription, create or select a resource group, and choose a region.
 Select the pricing tier based on your requirements and create the resource.
+
 Step 3: Get the API Key and Endpoint
 Access the Resource:
 
@@ -22,9 +24,11 @@ After creating the resource, navigate to it in the Azure portal.
 Copy the Key and Endpoint:
 
 Go to the "Keys and Endpoint" section to get the API key and endpoint URL.
+
 Step 4: Prepare Your Document
 Upload Document:
 Ensure your document (PDF, JPG, PNG, etc.) is stored in an accessible location such as an Azure Blob Storage or local directory.
+
 Step 5: Use the Form Recognizer REST API or SDK
 You can choose to use either the REST API directly or an SDK (like Python) to interact with Form Recognizer.
 
@@ -71,9 +75,11 @@ with open("<path-to-your-document>", "rb") as file:
 for page in result:
     for line in page.lines:
         print(line.text)
+
 Step 6: Process the Extracted Text
 Extract and Utilize Text:
 Process the extracted text according to your application's needs (e.g., store in a database, further analyze with NLP tools).
+
 Step 7: Monitor and Improve
 Monitor Usage:
 Use Azure Monitor to track API usage and performance.
